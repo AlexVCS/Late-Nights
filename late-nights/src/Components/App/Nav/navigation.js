@@ -1,4 +1,5 @@
 import React from 'react'
+import Hamburger from 'hamburger-react'
 
 const Nav = () => {
     return (
@@ -6,29 +7,16 @@ const Nav = () => {
         <div >
          <h4 className="title">LATE-NIGHTS</h4>
         </div>
-           <nav className="navBar">
-            <i></i>
-            <i></i>
-            <i></i>
-
-            {/* <ul className="navigation">
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">Late Stories</a>
-                </li>
-                <li className="helpButton">
-                    <a href="#">Help</a>
-                </li>
-                <li className="loginButton">
-                    <a href="#">Login</a>
-                </li>
+            <nav>
+            <div className="navigation">
+                <Hamburger className="hamburger" label="Show menu" size={15} />
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Late Stories</a>
+                <a className="helpButton" href="#">Help</a>
+                <a className="loginButton" href="#">Login</a>
                 <button className="signUp">Sign Up</button>
-                </ul> */}
+            </div>
             </nav>
        </div> 
     )
