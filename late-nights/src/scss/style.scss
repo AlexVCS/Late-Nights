@@ -1,4 +1,4 @@
-@import "_variables";
+@import "./variables";
 
 * {
     margin: 0;
@@ -50,4 +50,14 @@
 
 .hamburger-react {
     display: none;
+}
+
+.heading {
+    margin-top: 10px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .hamburger-react {
+        display: inline-block;
+    }
 }
